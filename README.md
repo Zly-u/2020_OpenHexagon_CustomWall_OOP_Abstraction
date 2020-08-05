@@ -1,4 +1,4 @@
-# Custom Wall extension module for [Open Hexagon](https://github.com/SuperV1234/SSVOpenHexagon)
+# [WIP] Custom Wall extension module for [Open Hexagon](https://github.com/SuperV1234/SSVOpenHexagon)
 
 Extends the functionality of custom walls in [Open Hexagon](https://github.com/SuperV1234/SSVOpenHexagon) by [SuperV1234](https://twitter.com/supahvee1234).
 
