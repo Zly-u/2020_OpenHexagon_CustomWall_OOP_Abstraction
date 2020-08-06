@@ -76,9 +76,10 @@ function Camera.new()
     end
 
     ---Sets the Zoom of the *`Camera`*.
-    ---Pass a table reference like {x = 0, y = 0} to tie it to the propertie, or 2 arguments for x and y.
+    ---Pass a table reference like {x = 0, y = 0} to tie it to the propertie, or 2 arguments for `x` and `y` or 1 argument for both `x` and `y`.
     ---@vararg table[]|number
     ---@overload fun(x:number, y:number):self
+    ---@overload fun(zoom:number):self
     ---@return self
     function camera:setZoom(...)
         local args = {...}
@@ -111,6 +112,7 @@ function Camera.new()
 
     ---Sets the Angle of the *`Camera`*.
     ---@param angle number in radians
+    ---@overload fun():void
     ---@return self
     function camera:setAngle(angle)
         self.angle = angle or 0
@@ -532,14 +534,19 @@ function CustomWall.new(_type)
     end
 
     ---Sets the scale of the *`wall`*, *`sprite`*, or *`spriteQuads`*.
-    ---Pass a table reference like {x = 0, y = 0} to tie it to the propertie, or 2 arguments for x and y.
+    ---Pass a table reference like {x = 0, y = 0} to tie it to the propertie, or 2 arguments for `x` and `y` or 1 argument for both `x` and `y`.
     ---@vararg table[]|number
     ---@overload fun(x:number, y:number):self
+    ---@overload fun(scale:number):void
     ---@return self
     function object:setScale(...)
         local args = {...}
         if type(args[1]) ~= "table" then
-            self.scale = {x = args[1], y = args[2]}
+            if #args[1] ~= 1 then
+                self.scale = {x = args[1], y = args[2]}
+            else
+                self.scale = {x = args[1], y = args[1]}
+            end
         else
             if args[1].x then
                 self.scale = args[1]
@@ -571,6 +578,7 @@ function CustomWall.new(_type)
 
     ---Sets the angle of the *`wall`*, *`sprite`*, or *`spriteQuads`*.
     ---@param angle number in radians
+    ---@overload fun():void
     ---@return self
     function object:setAngle(angle)
         self.angle = angle or 0
