@@ -549,7 +549,7 @@ function CustomWall.new(_type)
     function object:setScale(...)
         local args = {...}
         if type(args[1]) ~= "table" then
-            if #args[1] ~= 1 then
+            if #args ~= 1 then
                 self.scale = {x = args[1], y = args[2]}
             else
                 self.scale = {x = args[1], y = args[1]}
