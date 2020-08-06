@@ -385,6 +385,10 @@ function CustomWall.new(_type)
     ---@return number
     function sprite_line:getLineThickness() return self.line_thickness end
 
+    ---Returns the sprite data.
+    ---@return table
+    function sprite_line:getSpriteData() return self.sprite end
+
 
     --[[============================================================================================================]]--
     --[[============================================================================================================]]--
@@ -461,6 +465,10 @@ function CustomWall.new(_type)
         end
         CustomWall.type.sprites_quad[self.table_id] = nil
     end
+
+    ---Returns the sprite data.
+    ---@return table
+    function sprite_quad:getSpriteData() return self.sprite end
 
 
     --[[============================================================================================================]]--
