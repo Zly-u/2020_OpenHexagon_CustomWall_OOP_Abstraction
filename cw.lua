@@ -340,6 +340,8 @@ function CustomWall.new(_type)
                 vert[1], vert[2] = vert[1]*c - vert[2]*s, vert[1]*s + vert[2]*c
                 --Shear
                 vert[1], vert[2] = vert[1]+self.shear.x*vert[2], vert[2]+self.shear.y*vert[1]
+                --Position
+                vert[1], vert[2] = vert[1]+self.pos.x, vert[2]+self.pos.y
             end
         end
     end
@@ -434,6 +436,8 @@ function CustomWall.new(_type)
                 vert[1], vert[2] = vert[1]*c - vert[2]*s, vert[1]*s + vert[2]*c
                 --Shear
                 vert[1], vert[2] = vert[1]+self.shear.x*vert[2], vert[2]+self.shear.y*vert[1]
+                --Position
+                vert[1], vert[2] = vert[1]+self.pos.x, vert[2]+self.pos.y
             end
         end
     end
@@ -509,11 +513,14 @@ function CustomWall.new(_type)
 
         if type(args[1]) ~= "table" then
             self.pos = {x = args[1], y = args[2]}
+            print("table")
         else
             if args[1].x then
                 self.pos = args[1]
+                print("table2")
             else
                 self.pos = {x = args[1][1], y = args[1][2]}
+                print("table3")
             end
         end
 
