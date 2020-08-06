@@ -690,15 +690,15 @@ end
 function CustomWall.importSpriteLine(sprite)  --this is where I began to lost my brain cells
     LillaCode.normalisePolygonSprite(sprite)
 
-    local new_sprite = CustomWall.new("spriteLine")
-    new_sprite.sprite = sprite
-    for _, polygon in pairs(sprite) do
+    local new_sprite_line = CustomWall.new("spriteLine")
+    new_sprite_line.sprite = utils.deepcopy(sprite)
+    for _, polygon in pairs(new_sprite_line.sprite) do
         for _ = 1, #polygon.verts do
-            table.insert(new_sprite.lines, CustomWall.new("wall"))
+            table.insert(new_sprite_line.lines, CustomWall.new("wall"))
         end
     end
 
-    return new_sprite
+    return new_sprite_line
 end
 
 ---Returns a new sprite data of a *`quad`* type.
@@ -708,8 +708,8 @@ function CustomWall.importSpriteQuad(sprite)
     LillaCode.normalisePolygonSprite(sprite)
 
     local new_sprite_quad = CustomWall.new("spriteQuad")
-    new_sprite_quad.sprite = sprite
-    for _ in pairs(sprite) do
+    new_sprite_quad.sprite = utils.deepcopy(sprite)
+    for _ in pairs(new_sprite_quad.sprite) do
         table.insert(new_sprite_quad.quads, CustomWall.new("wall"))
     end
 
