@@ -1,3 +1,10 @@
+--[=====[     ---    Custom Wall Extension Module   ---     ]=====]--
+--                   ----[[  VERSION: 1.0  ]]----                  --
+--	                                                               --
+--  Written by Zly. Credit not necessary, but highly appreciated ♥ --
+--  https://twitter.com/zly_u      |      https://github.com/Zly-u --
+--[===============================================================]--
+
 --Oshisaure's Code https://github.com/Oshisaure
 local LillaCode = {}
 function LillaCode.normal(x, y)
@@ -38,7 +45,7 @@ function LillaCode.normalisePolygonSprite(sprite)
     end
 end
 
---Zly's Code
+--Zly's Code https://github.com/Zly-u
 --Camera that you prob don't have to worry about, unless you want to do idk cool stuff..?
 ---Camera for global transformations for every rendered wall on the screen.
 ---@class Camera
