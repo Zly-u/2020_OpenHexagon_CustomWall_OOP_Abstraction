@@ -4,7 +4,7 @@ Extends the functionality of custom walls in [Open Hexagon](https://github.com/S
 
 Made for my own practice in general.
 
-Feel free to suggest any changes through Pull Requests.
+Feel free to suggest any changes through Pull Requests and Issues.
 
 ## Requirements:
 - [Le Game](https://github.com/SuperV1234/SSVOpenHexagon).
