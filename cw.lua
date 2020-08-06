@@ -323,7 +323,7 @@ function CustomWall.new(_type)
             self.projected_sprite[polyID] = {verts = {}, color = {}}
             local line_proj = self.projected_sprite[polyID]
             for _, vert in pairs(line.verts) do
-                table.insert(line_proj.verts, {self.orient.x+vert[1], self.orient.y+vert[2]})
+                table.insert(line_proj.verts, {self.orient.x*(1/self.scale.y)+vert[1], self.orient.y*(1/self.scale.y)+vert[2]})
             end
             for _, ch in pairs(line.color) do
                 table.insert(line_proj.color, math.floor(0.5+ch*255))
@@ -419,7 +419,7 @@ function CustomWall.new(_type)
             self.projected_sprite[polyID] = {verts = {}, color = {}}
             local line_proj = self.projected_sprite[polyID]
             for _, vert in pairs(polygon.verts) do
-                table.insert(line_proj.verts, {self.orient.x+vert[1], self.orient.y+vert[2]})
+                table.insert(line_proj.verts, {self.orient.x*(1/self.scale.x)+vert[1], self.orient.y*(1/self.scale.y)+vert[2]})
             end
             for _, ch in pairs(polygon.color) do
                 table.insert(line_proj.color, math.floor(0.5+ch*255))
@@ -513,14 +513,11 @@ function CustomWall.new(_type)
 
         if type(args[1]) ~= "table" then
             self.pos = {x = args[1], y = args[2]}
-            print("table")
         else
             if args[1].x then
                 self.pos = args[1]
-                print("table2")
             else
                 self.pos = {x = args[1][1], y = args[1][2]}
-                print("table3")
             end
         end
 
