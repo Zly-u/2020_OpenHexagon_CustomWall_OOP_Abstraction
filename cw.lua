@@ -523,7 +523,6 @@ function CustomWall.new(_type)
             self.pos.x, self.pos.y = args[1], args[2]
         else
             if args[1].x then
-                print("a")
                 self.pos = args[1]
             else
                 self.pos.x, self.pos.y = args[1][1], args[1][2]
