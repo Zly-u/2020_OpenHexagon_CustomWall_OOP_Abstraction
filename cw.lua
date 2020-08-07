@@ -520,12 +520,13 @@ function CustomWall.new(_type)
         local args = {...}
 
         if type(args[1]) ~= "table" then
-            self.pos = {x = args[1], y = args[2]}
+            self.pos.x, self.pos.y = args[1], args[2]
         else
             if args[1].x then
+                print("a")
                 self.pos = args[1]
             else
-                self.pos = {x = args[1][1], y = args[1][2]}
+                self.pos.x, self.pos.y = args[1][1], args[1][2]
             end
         end
 
@@ -541,12 +542,12 @@ function CustomWall.new(_type)
         local args = {...}
 
         if type(args[1]) ~= "table" then
-            self.orient = {x = args[1], y = args[2]}
+            self.orient.x, self.orient.y = args[1], args[2]
         else
             if args[1].x then
                 self.orient = args[1]
             else
-                self.orient = {x = args[1][1], y = args[1][2]}
+                self.orient.x, self.orient.y = args[1][1], args[1][2]
             end
         end
         return self
@@ -562,15 +563,15 @@ function CustomWall.new(_type)
         local args = {...}
         if type(args[1]) ~= "table" then
             if #args ~= 1 then
-                self.scale = {x = args[1], y = args[2]}
+                self.scale.x, self.scale.y = args[1], args[2]
             else
-                self.scale = {x = args[1], y = args[1]}
+                self.scale.x, self.scale.y = args[1], args[1]
             end
         else
             if args[1].x then
                 self.scale = args[1]
             else
-                self.scale = {x = args[1][1], y = args[1][2]}
+                self.scale.x, self.scale.y = args[1][1], args[1][2]
             end
         end
         return self
@@ -584,12 +585,12 @@ function CustomWall.new(_type)
     function object:setShear(...)
         local args = {...}
         if type(args[1]) ~= "table" then
-            self.shear = {x = args[1], y = args[2]}
+            self.scale.x, self.scale.y = args[1], args[2]
         else
             if args[1].x then
                 self.shear = args[1]
             else
-                self.shear = {x = args[1][1], y = args[1][2]}
+                self.scale.x, self.scale.y = args[1][1], args[1][2]
             end
         end
         return self
