@@ -19,7 +19,7 @@ Feel free to suggest any changes through Pull Requests and Issues.
   work for you. (But it's not necessary anyway.)
   
 - If you want to be able to import sprites into the game then you need to use my sprite editor I've made once for 
-  Oshisaure's game [Puzzle Jungle Trouble](https://oshisaure.itch.io/puzzle-juggle-trouble): [PJT Sprite Editor](https://github.com/Zly-u/PJTSE).
+  Oshisaure's game [Puzzle Jungle Trouble](https://oshisaure.itch.io/puzzle-juggle-trouble): [PJT Sprite Editor Repo](https://github.com/Zly-u/PJTSE).
   (Will upload soon(tm). It's a bit meh, but works.)
 
 ## Usage:
