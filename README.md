@@ -4,7 +4,7 @@ Extends the functionality of custom walls in [Open Hexagon](https://github.com/S
 
 Made for my own practice in general.
 
-Feel free to suggest any changes through Pull Requests and Issues.
+Example of what's possible to make with this thing in the game: [Dino Game Clone](https://www.youtube.com/watch?v=nnB_mIzd1xo)
 
 ## What this lib used to allow you to do:
   - To use it as some sort of crappy 2D engine because I managed to abuse the walls in the game to act as polygons for drawing, transforming and etc.
