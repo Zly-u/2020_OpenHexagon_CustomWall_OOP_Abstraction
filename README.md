@@ -4,7 +4,12 @@ Extends the functionality of custom walls in [Open Hexagon](https://github.com/S
 
 Made for my own practice in general.
 
-Feel free to suggest any changes through Pull Requests and Issues.
+Example of what's possible to make with this thing in the game: [Dino Game Clone](https://www.youtube.com/watch?v=nnB_mIzd1xo)
+
+## What this lib used to allow you to do:
+  - To use it as some sort of crappy 2D engine because I managed to abuse the walls in the game to act as polygons for drawing, transforming and etc.
+  - Camera System for the entire thing.
+  - SOme other stuff, I don't remember.
 
 ## Requirements:
 - [Le Game](https://github.com/SuperV1234/SSVOpenHexagon).
@@ -14,11 +19,11 @@ Feel free to suggest any changes through Pull Requests and Issues.
   work for you. (But it's not necessary anyway.)
   
 - If you want to be able to import sprites into the game then you need to use my sprite editor I've made once for 
-  Oshisaure's game [Puzzle Jungle Trouble](https://oshisaure.itch.io/puzzle-juggle-trouble): [PJT Sprite Editor](https://github.com/Zly-u/PJTSE).
+  Oshisaure's game [Puzzle Jungle Trouble](https://oshisaure.itch.io/puzzle-juggle-trouble): [PJT Sprite Editor Repo](https://github.com/Zly-u/PJTSE).
   (Will upload soon(tm). It's a bit meh, but works.)
 
 ## Usage:
-Docs are here: [boop](https://github.com/Zly-u/OpenHexagon_CustomWall_module/wiki).
+Docs are here: [boop](https://github.com/Zly-u/OpenHexagon_CustomWall_module/wiki). (Doesn't work, there used to be a Wiki bit making this repo private broke it, which is very lame...)
 
 ## Credits:
 Thanks to [Oshisaure](https://twitter.com/oshisaure) for the help with the code in some places.
