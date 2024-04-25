@@ -27,3 +27,18 @@ Docs are here: [boop](https://github.com/Zly-u/OpenHexagon_CustomWall_module/wik
 
 ## Credits:
 Thanks to [Oshisaure](https://twitter.com/oshisaure) for the help with the code in some places.
+
+# Examples
+
+### a Dino Game Clone
+![a](https://github.com/Zly-u/OpenHexagon_CustomWall_OOP_Abstraction/blob/master/previews/Final%20Test%20by%20making%20a%20game%20with%20the%20library.gif)
+
+### Simple Platformer
+![a](https://github.com/Zly-u/OpenHexagon_CustomWall_OOP_Abstraction/blob/master/previews/200802_191001.gif)
+### With Camera transforms
+![a](https://github.com/Zly-u/OpenHexagon_CustomWall_OOP_Abstraction/blob/master/previews/200804_203411.gif)
+
+
+### [PJT Sprite Editor](https://github.com/Zly-u/PJTSE) sprite example with Transformations applied.
+![a](https://github.com/Zly-u/OpenHexagon_CustomWall_OOP_Abstraction/blob/master/previews/200803_182015.gif)
+![a](https://github.com/Zly-u/OpenHexagon_CustomWall_OOP_Abstraction/blob/master/previews/200803_185722.gif)
