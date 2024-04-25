@@ -6,6 +6,11 @@ Made for my own practice in general.
 
 Feel free to suggest any changes through Pull Requests and Issues.
 
+## What this lib used to allow you to do:
+  - To use it as some sort of crappy 2D engine because I managed to abuse the walls in the game to act as polygons for drawing, transforming and etc.
+  - Camera System for the entire thing.
+  - SOme other stuff, I don't remember.
+
 ## Requirements:
 - [Le Game](https://github.com/SuperV1234/SSVOpenHexagon).
 
@@ -18,7 +23,7 @@ Feel free to suggest any changes through Pull Requests and Issues.
   (Will upload soon(tm). It's a bit meh, but works.)
 
 ## Usage:
-Docs are here: [boop](https://github.com/Zly-u/OpenHexagon_CustomWall_module/wiki).
+Docs are here: [boop](https://github.com/Zly-u/OpenHexagon_CustomWall_module/wiki). (Doesn't work, there used to be a Wiki bit making this repo private broke it, which is very lame...)
 
 ## Credits:
 Thanks to [Oshisaure](https://twitter.com/oshisaure) for the help with the code in some places.
