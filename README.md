@@ -19,7 +19,7 @@ Example of what's possible to make with this thing in the game: [Dino Game Clone
   work for you. (But it's not necessary anyway.)
   
 - If you want to be able to import sprites into the game then you need to use my sprite editor I've made once for 
-  Oshisaure's game [Puzzle Jungle Trouble](https://oshisaure.itch.io/puzzle-juggle-trouble): [PJT Sprite Editor Repo](https://github.com/Zly-u/PJTSE).
+  Oshisaure's game [Puzzle Jungle Trouble](https://oshisaure.itch.io/puzzle-juggle-trouble): [PJT Sprite Editor Repo](https://github.com/Zly-u/2019_PJTSE).
   (Will upload soon(tm). It's a bit meh, but works.)
 
 ## Usage:
@@ -39,6 +39,6 @@ Thanks to [Oshisaure](https://twitter.com/oshisaure) for the help with the code 
 ![a](https://github.com/Zly-u/OpenHexagon_CustomWall_OOP_Abstraction/blob/master/previews/200804_203411.gif)
 
 
-### [PJT Sprite Editor](https://github.com/Zly-u/PJTSE) sprite example with Transformations applied.
+### [PJT Sprite Editor](https://github.com/Zly-u/2019_PJTSE) sprite example with Transformations applied.
 ![a](https://github.com/Zly-u/OpenHexagon_CustomWall_OOP_Abstraction/blob/master/previews/200803_182015.gif)
 ![a](https://github.com/Zly-u/OpenHexagon_CustomWall_OOP_Abstraction/blob/master/previews/200803_185722.gif)
